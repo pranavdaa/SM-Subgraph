@@ -61,6 +61,7 @@ export function handleTransfer(event: TransferEvent): void {
   entity.from = event.params.from
   entity.to = event.params.to
   entity.tokenId = event.params.tokenId
+  entity.blockNumber = event.block.number // the extra thing
   entity.save()
 }
 

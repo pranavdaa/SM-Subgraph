@@ -28,6 +28,7 @@ type Transfer @entity {
   from: Bytes! # address
   to: Bytes! # address
   tokenId: BigInt! # uint256
+  blockNumber:BigInt! # the extra thing
 }
 
 type Unpaused @entity {
